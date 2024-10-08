@@ -1,4 +1,9 @@
 public abstract class CondimentsDecorator extends Beverage {
-    Beverage beverage;
+    public Beverage beverage;
     public abstract String getDescription();
+
+
+    public Size getSize() {
+        return beverage.getSize();
+    }
 }
